@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.pre {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #00b4db; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0083b0,
+    #00b4db
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0083b0,
+    #00b4db
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cloud1,
+.cloud2,
+.cloud3 {
+  height: 100px;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+}
+
+.cloud1 {
+  top: 25%;
+  transform: translate(100%, -25%);
+  animation: clouds 3s ease infinite;
+}
+.cloud2 {
+  top: 50%;
+  transform: translate(100%, -50%);
+  animation: clouds 3s ease infinite 2s;
+}
+.cloud3 {
+  top: 75%;
+  transform: translate(100%, -75%);
+  animation: clouds 3s ease infinite 1.5s;
+}
+.airplane {
+  height: 200px;
+  animation: airplane 1s ease infinite alternate;
+}
+.pre h2 {
+  position: absolute;
+  top: 75%;
+  transform: translateY(-75%);
+  color: white;
+  font-size: 30px;
+}
+
+@keyframes airplane {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(50px);
+  }
+}
+
+@keyframes clouds {
+  from {
+    right: 0%;
+  }
+  to {
+    right: 130%;
+  }
+}
