@@ -1,3 +1,8 @@
+ Preview of the App
+ 
+ ![Image of App](https://i.ibb.co/smfX33V/landing-react.jpg)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
